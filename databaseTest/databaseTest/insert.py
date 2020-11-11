@@ -8,15 +8,25 @@ result = cur.execute('SELECT * FROM company;').fetchall()
 
 
 #-------------------------------------Inserting--------------------------------
-query = """INSERT INTO company
-(company_no,company_name,tel,county,post_code)
-VALUES (5000,'QA','0207 888555','TEST!!!!','SE8 5ER')"""
-conn= sqlite3.connect('testtable')
-cur = conn.cursor() 
-cur.execute(query)
 
-conn.commit()
-conn.close()
+# query = """INSERT INTO company
+# (company_no,company_name,tel,county,post_code)
+# VALUES (5000,'QA','0207 888555','TEST!!!!','SE8 5ER')"""
+# conn= sqlite3.connect('testtable')
+# cur = conn.cursor() 
+# cur.execute(query)
 
-#-------------------------------------------------------------------------------
+# conn.commit()
+# conn.close()
 
+#---------------------------------------Deleting---------------------------------
+
+# sqlStr = """DELETE FROM company
+# WHERE company_no = 5000"""
+
+# conn= sqlite3.connect('testtable')
+# cur = conn.cursor() 
+# cur.execute(sqlStr)
+
+# conn.commit()
+# conn.close()
