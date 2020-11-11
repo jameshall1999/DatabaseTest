@@ -10,13 +10,13 @@ result = cur.execute('SELECT * FROM company;').fetchall()
 #------- Some Commands (UN- COMMENT THEM TO USE THEM)----------------------------------------------------------
 
 
-# sqlStr= """SELECT* FROM company WHERE county='London'ORDER BY company_no"""
-# conn= sqlite3.connect('testtable')
-# cur = conn.cursor() 
-# result = cur.execute(sqlStr).fetchall()
-# conn.close()
-# for row in result: 
-#     print(row)
+sqlStr= """SELECT* FROM company WHERE county='London'ORDER BY company_no"""
+conn= sqlite3.connect('testtable')
+cur = conn.cursor() 
+result = cur.execute(sqlStr).fetchall()
+conn.close()
+for row in result: 
+    print(row)
 
 
 #-------------------------------------------------------------------------------
@@ -28,12 +28,12 @@ result = cur.execute('SELECT * FROM company;').fetchall()
 #     conn.close()
 #     return result
 
-# # query = """select *
-# #     from company"""
+# query = """select *
+#     from company"""
 
-# # query_result=getData(query)
-# # for q in query_result:
-# #     print(q)
+# query_result=getData(query)
+# for q in query_result:
+#     print(q)
 
 # query1='select * from sale'
 # query1_result=getData(query1)
